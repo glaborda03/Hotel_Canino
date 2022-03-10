@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(234, 222, 184);
+    font-family: 'Roboto', sans-serif;
+}
+/* Estilos para el header */
+
+.header{
+    height: 150px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+    padding: 1rem;
+    position: relative;
+    background-color: rgb(160, 159, 87); 
+    margin-bottom: 50px;
+}
+.header__contenedor{
+    margin:auto 0;
+    height: 150px;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+   padding-right: 2rem;
+   list-style: none;
+}
+.header__logo{
+    width: 150px;
+    height: 150px;
+    margin-left: 2rem;
+}
+.header__logo img{
+    height: 100%;   
+}
+.nav__lista{
+    display: flex;
+    gap: 1.5rem;
+    font-size: x-large;    
+}
+.nav__enlace {
+    color: rgb(255, 255, 255);
+    text-decoration:  none;
+}
+/* Estilos para el Cuerpo de la pagina inicio */
+
+.titulo{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(104, 61, 16);
+    margin-bottom: 50px;
+}
+h2{
+    font-size: 60px;
+    text-align: center;
+    color: rgb(104, 61, 16);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 60px;
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+    color:rgb(160, 159, 87);
+    margin-bottom: 50px;
+}
+h4{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+h5{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.inicio__banner{
+    margin-bottom: 60px;
+}
+.inicio__contenedor{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem;
+}
+.inicio__video{
+    margin-bottom: 60px;
+}
+.inicio__parrafo{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.inicio__whatsapp{
+    font-size: 50px;
+    color:green;    
+}
+/* Estilos para el cuerpo de la pagina Servicios */
+
+.servicios__contenedor1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+.servicios__contenedor2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+.servicios__contenedor3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 100px;
+}
+.servicios__h3{
+    font-size: 40px;
+    margin-top:20px ;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.servicios__img{
+    margin-left: 100px;
+}
+.servicios__parrafo{
+    text-align: left;
+    margin-bottom: 60px;
+    margin-right: 40px;
+    font-size: 25px;
+    margin:auto;
+}
+/* Estilos para el cuerpo de la pagina Galeria */
+
+.galeria{    
+    width: 100%;
+}
+.galeria__contenedor{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    align-content: center;
+    grid-row-gap: 30px;
+    grid-column-gap: 15px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 200px;
+}
+/* Estilos para el cuerpo de la pagina Nosotros */
+
+.nosotros__parrafo{
+    width: 100%;
+    font-size: 25px;
+    margin-bottom: 30px;
+    padding: 30px;
+    margin:auto;
+}
+.nosotros__img{     
+    padding:30px;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.nosotros__img img{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+/* Estilos para el cuerpo de la pagina Contacto */
+
+.contacto__formulario{
+    Margin-bottom: 250px;
+    padding: 30px;
+    font-size: 20px;
+}
+/* Estilo para el footer */
+
+.footer{
+    width: 100vw;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+    padding: 1rem;
+    background-color: rgb(160, 159, 87);
+}
+.footer__contenedor{
+    margin: auto 0;
+    display: grid; 
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 120px;
+    align-items: center;
+}
+.footer__contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    font-size: 25px;
+    color: aliceblue;    
+}
+.footer__logo{
+    width: 120px;
+    height: 120px;
+    margin-left: 10px;
+}
+.footer__redes{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    align-items: center;
+}
+.footer__redestext{
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+.footer__redesitem{
+    font-size: 40px;
+    color:white;
+    margin-left: 2rem;
+}
+/* Full Responsive para tablet */
+
+@media screen and (max-width: 1024px) {
+    .header{
+        height: auto;
+    }
+    .header__logo{
+        width: 120px;
+        height: 120px;        
+    }
+    .header__contenedor{
+        gap: 2rem;
+    }
+    .nav__lista{
+        flex-wrap: wrap;    
+    }
+    .titulo{
+        font-size: 25px;
+    }
+    .inicio__video{
+        width: 75%;
+    }
+    h4{
+        font-size: 22px;
+    }
+    .inicio__parrafo{
+        font-size: 20px;
+    }
+    .inicio__contenedor{
+        flex-direction: column;
+    }
+    .inicio__contenedor video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .servicios__contenedor1{
+        flex-direction: column;
+    }
+    .servicios__contenedor2{
+        flex-direction: column;
+    }
+    .servicios__contenedor3{
+        flex-direction: column;
+    }
+    h2{
+        font-size: 45px;
+    }
+    .servicios__h3{
+        font-size: 30px;
+    }
+    .servicios__parrafo{
+        text-align: center;
+        font-size: 20px;
+    }
+    .servicios__img{
+        margin:auto;
+    }
+    .galeria__contenedor{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+    .galeria__contenedor img{
+        width: 100%;
+        height: 100%;
+    }
+    .nosotros__parrafo{
+        font-size: 20px;
+    }
+    .nosotros__img{
+        flex-direction: column;
+    }
+    .footer__contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+    .footer__redes{
+        align-items:flex-start;
+    }
+}    
+/* Full Responsive para mobile */
+
+@media screen and (max-width: 600px) {
+    .header__contenedor{
+        flex-direction: column;
+        gap: 0px
+    }    
+    .header__logo{
+        width: 100px;
+        height: 100px;        
+    }
+    .nav__lista{
+        flex-wrap: wrap;
+        font-size: 20px;
+        gap: 0.5rem;
+    }    
+    .titulo{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    .inicio__parrafo{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .servicios__h3{
+        font-size: 20px;
+    }
+    .servicios__parrafo{
+        text-align: center;
+        font-size: 16px;
+    }
+    .servicios__img{
+        width: 75%
+    }
+    .nosotros__parrafo{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .footer__contacto{
+        font-size: 18px;
+    }
+    .footer__redes{
+        font-size: 20px;
+    }
+    .footer__redestext{
+        font-size: 15px;        
+    }
+    .footer__redesitem{
+        font-size: 30px;
+    }
+}
