@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VinikEducacionCanina - Servicios</title>
-    <link rel="stylesheet" href="../css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d61d4fd39b.js" crossorigin="anonymous"></script>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
 
 </head>
     <body>
@@ -20,19 +20,19 @@
                 <nav>
                     <ul class="nav__lista">
                         <li> 
-                            <a class="nav__enlace" href="../index.html">Inicio</a>
+                            <a href="../index.html">Inicio</a>
                         </li> 
                         <li>
-                            <a class="nav__enlace" href="../paginas/servicios.html">Servicios</a>
+                            <a href="servicios.html">Servicios</a>
                         </li>
                         <li>
-                            <a class="nav__enlace" href="../paginas/galeria.html">Galeria</a>
+                            <a href="galeria.html">Galeria</a>
                         </li>
                         <li>
-                            <a class="nav__enlace" href="../paginas/nosotros.html">Nosotros</a>
+                            <a href="nosotros.html">Nosotros</a>
                         </li>
                         <li>
-                            <a class="nav__enlace" href="../paginas/contacto.html">Contacto</a>
+                            <a href="contacto.html">Contacto</a>
                         </li>    
                     </ul>
                 </nav>                    
@@ -41,66 +41,154 @@
 
         <main>
             <section>
-                <h2>SERVICIOS</h2>
-                <div">
-                    <h3 class="servicios__h3">HOTEL Y GUARDERIA</h3>
-                </div>                
-                <div class="servicios__contenedor1">         
-                    <img src="../imagenes/servicios1.png" alt="FotoS1" class="servicios__img">
-                    <p class="servicios__parrafo">
-                        En Vinik ofrecemos servicio de hotel y guardería.
-                        Para esos días en los que pasás mucho rato fuera de casa y no querés que queden solos, aburridos y destruyendo todo o simplemente para darles un tiempo de relax, disfrute y diversión!
-                        En nuestra guardería tu perro puede venir a pasar el día con nosotros, para disfrutar del juego y del tiempo al aire libre en grupos reducidos.
-                        El 100% del tiempo están acompañados y cuidados con responsabilidad. 
-                    </p>
+                <h2 class="h2titulos">SERVICIOS</h2>
+
+                <div class="card mb-3" style="max-width: 1200px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../imagenes/servicios1.png" class="img-fluid rounded" alt="servicios1">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Hotel y Guarderia</h5>
+                                <p class="card-text">En Vinik ofrecemos servicio de hotel y guardería.
+                                    Para esos días en los que pasás mucho rato fuera de casa y no querés que queden solos, aburridos y destruyendo todo o simplemente para darles un tiempo de relax, disfrute y diversión!
+                                    En nuestra guardería tu perro puede venir a pasar el día con nosotros, para disfrutar del juego y del tiempo al aire libre en grupos reducidos.
+                                    El 100% del tiempo están acompañados y cuidados con responsabilidad.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="servicios__h3">PASEOS GRUPALES</h3>
-                </div>
-                <div class="servicios__contenedor2">
-                    <img src="../imagenes/servicios2.png" alt="FotoS2" class="servicios__img">
-                    <p class="servicios__parrafo">
-                        En Vinik apostamos al vínculo por sobre todas la cosas!
-                        Te gustaría que tu mejor amigo se sume a nuestras jornadas recreativas?
-                        Juegos de olfato, caminatas, juegos entre ellos de forma segura y controlada. 
-                        Bajo la supervisión de un entrenador con experiencia en todo tipo de razas. 
-                        Trabajando con las herramientas adecuadas y métodos sumamente positivos y beneficiosos 
-                        para lograr que tu perro esté sano tanto física como mentalmente.            
-                    </p>
-                </div>
-                <div>
-                    <h3 class="servicios__h3">CLASES DE SOCIALIZACION</h3>
-                </div>                
-                <div class="servicios__contenedor3">
-                    <img src="../imagenes/servicios3.png" alt="FotoS3" class="servicios__img">
-                    <p class="servicios__parrafo">
-                        Las clases de socializacion son instancias que estamos realizando que apuntan a ayudar a aquellos perros y familias en conjunto para mejorar diferentes problemas de comportamiento relacionados con la socialización con otros perros y personas.
-                        Previo a cada jornada tenemos una clase con uno o dos perros para evaluar la problemática y el tipo de abordaje necesario en cada caso. 
-                        El objetivo es mejorar las habilidades sociales de diversas formas, abordando dificultades ya sea por falta de comunicación adecuada, inseguridad, reactividad, o cachorros en formación entre otras. 
-                        Esperamos poder seguir ayudando cada vez a más perros para que vayan acumulando buenas experiencias en contacto social y comunicación. 
-                    </p>                
-                </div>                
+                <div class="card mb-3" style="max-width: 1200px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="../imagenes/servicios2.png" class="img-fluid rounded" alt="servicios1">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Paseos Grupales</h5>
+                          <p class="card-text">En Vinik apostamos al vínculo por sobre todas la cosas!
+                            Te gustaría que tu mejor amigo se sume a nuestras jornadas recreativas?
+                            Juegos de olfato, caminatas, juegos entre ellos de forma segura y controlada. 
+                            Bajo la supervisión de un entrenador con experiencia en todo tipo de razas. 
+                            Trabajando con las herramientas adecuadas y métodos sumamente positivos y beneficiosos 
+                            para lograr que tu perro esté sano tanto física como mentalmente.
+                        </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card mb-3" style="max-width: 1200px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="../imagenes/servicios3.png" class="img-fluid rounded" alt="servicios1">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Clases de Socializacion</h5>
+                          <p class="card-text">Las clases de socializacion son instancias que estamos realizando que apuntan a ayudar a aquellos perros y familias en conjunto para mejorar diferentes problemas de comportamiento relacionados con la socialización con otros perros y personas.
+                            Previo a cada jornada tenemos una clase con uno o dos perros para evaluar la problemática y el tipo de abordaje necesario en cada caso. 
+                            El objetivo es mejorar las habilidades sociales de diversas formas, abordando dificultades ya sea por falta de comunicación adecuada, inseguridad, reactividad, o cachorros en formación entre otras. 
+                            Esperamos poder seguir ayudando cada vez a más perros para que vayan acumulando buenas experiencias en contacto social y comunicación.
+                        </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
             </section>
         </main>
 
-        <footer class="footer">
-            <div class="footer__contenedor">
-                <div class="footer__logo">
-                    <img src="../imagenes/logo.png" alt="logo">
-                </div>
-                <div class="footer__contacto">
-                    <i class="fas fa-phone-square-alt"> 099 123 456 </i>
-                    <i class="fas fa-home"> Gral. French 1759, Montevideo </i> 
-                    <i class="fas fa-envelope"> vinikeducanina@gmail.com </i> 
-                </div>
-                <div class="footer__redes">
-                    <h4 class="footer__redestext">Seguinos en nuestras Redes</h4>
-                    <div>                        
-                        <a class="footer__redesitem" target="blank_" href="https://es-la.facebook.com/VINIKHotelyeducacioncanina"> <i class="fab fa-facebook-f"></i> </a>                           
-                        <a class="footer__redesitem" target="blank_" href="https://www.instagram.com/vinik_hotel_canino/?hl=es"> <i class="fab fa-instagram"></i> </a>                    
-                    </div>                    
-               </div>     
+        <footer
+            class="text-center text-lg-start text-white"
+            style="background-color: #a09f57"
+                    >
+              <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Links -->
+                <section class="">
+                  <!--Grid row-->
+                  <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <img src="../imagenes/logo.png" alt="logo">
+                        </div>
+                        <!-- Grid column -->
+            
+                        <hr class="w-100 clearfix d-md-none" />
+            
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Secciones</h6>
+                        <p>
+                            <a class="text-white" href="../index.html">INICIO</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="servicios.html">SERVICIOS</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="galeria.html">GALERIA</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="nosotros.html">NOSOTROS</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="contacto.html">CONTACTO</a>
+                        </p>
+                        </div>
+            
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none" />
+            
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">CONTACTO</h6>
+                        <p><i class="fas fa-home mr-3"></i> Gral. French 1759, Montevideo</p>
+                        <p><i class="fas fa-envelope mr-3"></i> vinikeducanina@gmail.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> 099 123 456</p>
+                        </div>
+                        <!-- Grid column -->
+            
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">SEGUINOS EN NUESTRAS REDES</h6>
+            
+                            <!-- Facebook -->
+                            <a
+                            class="btn btn-primary btn-floating m-1"
+                            style="background-color: #3b5998"
+                            target="blank_"
+                            href="https://es-la.facebook.com/VINIKHotelyeducacioncanina"
+                            role="button"
+                            ><i class="fab fa-facebook-f"></i
+                            ></a>       
+                            <!-- Instagram -->
+                            <a
+                            class="btn btn-primary btn-floating m-1"
+                            style="background-color: #ac2bac"
+                            target="blank_"
+                            href="https://www.instagram.com/vinik_hotel_canino/?hl=es"
+                            role="button"
+                            ><i class="fab fa-instagram"></i
+                            ></a>   
+                        </div>
+                  </div>
+                </section>
             </div>
+
+              <!-- Copyright -->
+              <div
+                   class="text-center p-3"
+                   style="background-color: rgba(0, 0, 0, 0.2)"
+                   > © 2022 Copyright:
+                   <a class="text-white"
+                   >glaborda03</a
+                  >
+              </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     </body>
 </html>

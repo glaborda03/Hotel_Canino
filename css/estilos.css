@@ -15,7 +15,7 @@ body {
     padding: 1rem;
     position: relative;
     background-color: rgb(160, 159, 87); 
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 .header__contenedor{
     margin:auto 0;
@@ -39,20 +39,97 @@ ul{
 .nav__lista{
     display: flex;
     gap: 1.5rem;
-    font-size: x-large;    
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);    
 }
-.nav__enlace {
+nav ul li a {
+    display: block;
     color: rgb(255, 255, 255);
     text-decoration:  none;
+    font-weight: 700;
+    position: relative;
 }
+nav ul li a:hover{
+    color:rgb(104, 61, 16);
+}
+
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    top:100%;
+    left: 0%;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(104, 61, 16);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+nav ul li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
 /* Estilos para el Cuerpo de la pagina inicio */
 
-.titulo{
-    font-size: 40px;
-    text-align: center;
-    color: rgb(104, 61, 16);
-    margin-bottom: 50px;
+.carousel-item active{
+    position: relative;
 }
+
+
+.Tituloprueba__p {
+	text-transform: uppercase;
+	letter-spacing: 2em;
+	display: inline-block;
+	border-width: 4px 0;
+	padding: 1.5em 0em;
+	position: absolute;
+	top: 0%;
+	left: 60%;
+	width: 40em;
+    margin: 0 0 0 -20em;
+} 
+  
+.Tituloprueba__span {
+
+  	font: 900 4em/1 "Oswald", sans-serif;
+  	letter-spacing: 0.5rem;
+  	/* padding: .25em 0 .325em; */
+	  display: block;
+	  margin: 0 auto;
+      margin-left: 3%;
+  	text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+
+/* Clip Background Image */
+
+      background: rgb(160,157,17);
+      background: linear-gradient(13deg, rgba(160,157,17,1) 0%, rgba(104,61,16,1) 44%);
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+  }
+
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+ }
+
 h2{
     font-size: 60px;
     text-align: center;
@@ -60,6 +137,14 @@ h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 60px;
 }
+.h2titulos {
+    margin-top: 60px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
 h3{
     font-size: 30px;
     text-align: center;
@@ -74,9 +159,7 @@ h5{
     font-size: 20px;
     margin-bottom: 10px;
 }
-.inicio__banner{
-    margin-bottom: 60px;
-}
+
 .inicio__contenedor{
     display:flex;
     justify-content: space-evenly;
@@ -84,7 +167,7 @@ h5{
     padding: 3rem;
 }
 .inicio__video{
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 .inicio__parrafo{
     font-size: 22px;
@@ -96,43 +179,14 @@ h5{
 }
 /* Estilos para el cuerpo de la pagina Servicios */
 
-.servicios__contenedor1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 1rem;
+.card{
+    margin: auto;
+    margin-top: 60px;
+    background-color: rgb(234, 222, 184);
 }
-.servicios__contenedor2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 1rem;
-}
-.servicios__contenedor3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 1rem;
-    margin-bottom: 100px;
-}
-.servicios__h3{
-    font-size: 40px;
-    margin-top:20px ;
-    margin-bottom: 10px;
-    text-align: center;
-}
-.servicios__img{
-    margin-left: 100px;
-}
-.servicios__parrafo{
-    text-align: left;
-    margin-bottom: 60px;
-    margin-right: 40px;
+.card-title{
+    margin-bottom: 20px;
     font-size: 25px;
-    margin:auto;
 }
 /* Estilos para el cuerpo de la pagina Galeria */
 
@@ -181,47 +235,17 @@ h5{
 }
 /* Estilo para el footer */
 
-.footer{
-    width: 100vw;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
-    padding: 1rem;
-    background-color: rgb(160, 159, 87);
-}
-.footer__contenedor{
-    margin: auto 0;
-    display: grid; 
-    grid-template-columns: 0.5fr 2fr 0.5fr;
-    grid-template-rows: 120px;
-    align-items: center;
-}
-.footer__contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-    font-size: 25px;
-    color: aliceblue;    
-}
 .footer__logo{
     width: 120px;
     height: 120px;
     margin-left: 10px;
 }
-.footer__redes{
-    display: flex;
-    flex-direction: column;
-    font-size: 25px;
-    align-items: center;
+.text-white{
+    text-decoration: none;
+    font-size: 14px;
 }
-.footer__redestext{
-    font-size: 20px;
-    color: aliceblue;
-    text-align: center;
-}
-.footer__redesitem{
-    font-size: 40px;
-    color:white;
-    margin-left: 2rem;
-}
+
+
 /* Full Responsive para tablet */
 
 @media screen and (max-width: 1024px) {
@@ -236,7 +260,8 @@ h5{
         gap: 2rem;
     }
     .nav__lista{
-        flex-wrap: wrap;    
+        flex-wrap: wrap;
+        justify-content: center;  
     }
     .titulo{
         font-size: 25px;
@@ -311,7 +336,8 @@ h5{
 @media screen and (max-width: 600px) {
     .header__contenedor{
         flex-direction: column;
-        gap: 0px
+        gap: 0px;
+        justify-content: center;
     }    
     .header__logo{
         width: 100px;
@@ -347,17 +373,5 @@ h5{
     .nosotros__parrafo{
         font-size: 16px;
         margin-bottom: 20px;
-    }
-    .footer__contacto{
-        font-size: 18px;
-    }
-    .footer__redes{
-        font-size: 20px;
-    }
-    .footer__redestext{
-        font-size: 15px;        
-    }
-    .footer__redesitem{
-        font-size: 30px;
     }
 }
