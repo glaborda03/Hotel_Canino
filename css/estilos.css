@@ -14,8 +14,7 @@ body {
     box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
     padding: 1rem;
     position: relative;
-    background-color: rgb(160, 159, 87); 
-    /* margin-bottom: 50px; */
+    background-color: rgb(160, 159, 87);
 }
 .header__contenedor{
     margin:auto 0;
@@ -75,61 +74,6 @@ nav ul li a:hover::after{
 
 /* Estilos para el Cuerpo de la pagina inicio */
 
-.carousel-item active{
-    position: relative;
-}
-
-
-.Tituloprueba__p {
-	text-transform: uppercase;
-	letter-spacing: 2em;
-	display: inline-block;
-	border-width: 4px 0;
-	padding: 1.5em 0em;
-	position: absolute;
-	top: 0%;
-	left: 60%;
-	width: 40em;
-    margin: 0 0 0 -20em;
-} 
-  
-.Tituloprueba__span {
-
-  	font: 900 4em/1 "Oswald", sans-serif;
-  	letter-spacing: 0.5rem;
-  	/* padding: .25em 0 .325em; */
-	  display: block;
-	  margin: 0 auto;
-      margin-left: 3%;
-  	text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
-
-/* Clip Background Image */
-
-      background: rgb(160,157,17);
-      background: linear-gradient(13deg, rgba(160,157,17,1) 0%, rgba(104,61,16,1) 44%);
-	  -webkit-background-clip: text;
-	  background-clip: text;
-
-/* Animate Background Image */
-
-	  -webkit-text-fill-color: transparent;
-	  -webkit-animation: aitf 80s linear infinite;
-
-/* Activate hardware acceleration for smoother animations */
-
-	  -webkit-transform: translate3d(0,0,0);
-	  -webkit-backface-visibility: hidden;
-
-  }
-
-
-/* Animate Background Image */
-
-@-webkit-keyframes aitf {
-	0% { background-position: 0% 50%; }
-	100% { background-position: 100% 50%; }
- }
-
 h2{
     font-size: 60px;
     text-align: center;
@@ -188,51 +132,15 @@ h5{
     margin-bottom: 20px;
     font-size: 25px;
 }
-/* Estilos para el cuerpo de la pagina Galeria */
 
-.galeria{    
-    width: 100%;
-}
-.galeria__contenedor{
-    display: grid;
-    grid-template-columns: 400px 400px;
-    justify-content: center;
-    align-content: center;
-    grid-row-gap: 30px;
-    grid-column-gap: 15px;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 200px;
-}
-/* Estilos para el cuerpo de la pagina Nosotros */
-
-.nosotros__parrafo{
-    width: 100%;
-    font-size: 25px;
-    margin-bottom: 30px;
-    padding: 30px;
-    margin:auto;
-}
-.nosotros__img{     
-    padding:30px;
-    margin:auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 80px;
-}
-.nosotros__img img{
-    width: 100%;
-    height: auto;
-    padding: 1rem;
-}
 /* Estilos para el cuerpo de la pagina Contacto */
 
-.contacto__formulario{
-    Margin-bottom: 250px;
-    padding: 30px;
-    font-size: 20px;
+.contacto__img{
+    width: 100%;
+    height: auto;
+    /* margin: 0 auto; */
 }
+
 /* Estilo para el footer */
 
 .footer__logo{
@@ -247,6 +155,7 @@ h5{
 
 
 /* Full Responsive para tablet */
+
 
 @media screen and (max-width: 1024px) {
     .header{
