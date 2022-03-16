@@ -40,38 +40,30 @@
         </header>
 
         <main>
-            <h2 class="h2titulos">CONTACTO</h2>
-            <div>
-                <form action="" method="" enctype="">
-                    <fieldset class="contacto__formulario">    
-                        <legend>Formulario de Contacto</legend>                        
-                        <div>
-                            <label for="fullname">Nombre Completo:</label>
-                            <input type="text" id="fullname" name="fullname" placeholder="Ingresa nombre completo" >    
-                        </div>    
-                        <div>
-                            <label for="edad">Edad:</label>
-                            <input type="number" id="edad" name="edad" placeholder="Ingresa tu edad">    
-                        </div>    
-                        <div>    
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="Ingresa tu email">    
-                        </div>    
-                        <div>    
-                            <label for="password">Password:</label>
-                            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña">    
-                        </div>    
-                        <div>    
-                            <label for="Comentario">Comentario:</label>
-                            <textarea name="" id="Comentario" cols="30" rows="10"></textarea>     
-                        </div>    
-                        <div>    
-                            <button>Enviar</button>
-                            <button type="reset">Limpiar</button>    
-                        </div>                                
-                    </fieldset>    
-                </form>
-            </div>
+            <section>
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col12 col-md-6">
+                            <h2 class="h2titulos">CONTACTO</h2>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Numero de telefono</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Teléfono">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu consulta</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                        </div>
+                        <div class="col12 col-md-6 col align-self-center">
+                            <img class="contacto__img img-thumbnail" src="../imagenes/imagen-contacto.jpg" alt="img contacto">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer

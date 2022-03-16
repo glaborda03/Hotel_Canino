@@ -14,8 +14,7 @@ body {
     box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
     padding: 1rem;
     position: relative;
-    background-color: rgb(160, 159, 87); 
-    /* margin-bottom: 50px; */
+    background-color: rgb(160, 159, 87);
 }
 .header__contenedor{
     margin:auto 0;
@@ -75,8 +74,6 @@ nav ul li a:hover::after{
 
 /* Estilos para el Cuerpo de la pagina inicio */
 
-
-
 h2{
     font-size: 60px;
     text-align: center;
@@ -135,51 +132,15 @@ h5{
     margin-bottom: 20px;
     font-size: 25px;
 }
-/* Estilos para el cuerpo de la pagina Galeria */
 
-.galeria{    
-    width: 100%;
-}
-.galeria__contenedor{
-    display: grid;
-    grid-template-columns: 400px 400px;
-    justify-content: center;
-    align-content: center;
-    grid-row-gap: 30px;
-    grid-column-gap: 15px;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 200px;
-}
-/* Estilos para el cuerpo de la pagina Nosotros */
-
-.nosotros__parrafo{
-    width: 100%;
-    font-size: 25px;
-    margin-bottom: 30px;
-    padding: 30px;
-    margin:auto;
-}
-.nosotros__img{     
-    padding:30px;
-    margin:auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 80px;
-}
-.nosotros__img img{
-    width: 100%;
-    height: auto;
-    padding: 1rem;
-}
 /* Estilos para el cuerpo de la pagina Contacto */
 
-.contacto__formulario{
-    Margin-bottom: 250px;
-    padding: 30px;
-    font-size: 20px;
+.contacto__img{
+    width: 100%;
+    height: auto;
+    /* margin: 0 auto; */
 }
+
 /* Estilo para el footer */
 
 .footer__logo{
@@ -194,6 +155,7 @@ h5{
 
 
 /* Full Responsive para tablet */
+
 
 @media screen and (max-width: 1024px) {
     .header{
