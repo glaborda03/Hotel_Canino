@@ -1,0 +1,93 @@
+/* Full Responsive para tablet */
+
+@media screen and (max-width: 1024px) {
+    .header{
+        height: auto;
+    }
+    .header__logo{
+        width: 120px;
+        height: 120px;        
+    }
+    .header__contenedor{
+        gap: 2rem;
+    }
+    .nav__lista{
+        flex-wrap: wrap;
+        justify-content: center;  
+    }
+    h4{
+        font-size: 22px;
+    }
+    .titulobanner{
+        font-size: 50px;
+    }
+    .subtitulobanner{
+        font-size: 18px;
+    }
+    .inicio__video{
+        padding-right: 0;
+    }
+    .inicio__parrafo{
+        font-size: 16px;
+    }
+    h2{
+        font-size: 45px;
+    }
+    .nosotros__parrafo{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .titulobanner{
+        font-size: 30px;
+    }
+    .subtitulobanner{
+        font-size: 14px;
+        left: 38%;
+        top: 13%;
+    }
+
+}
+
+/* Full Responsive para mobile */
+
+@media screen and (max-width: 600px) {
+    .header__contenedor{
+        flex-direction: column;
+        gap: 0px;
+        justify-content: center;
+    }    
+    .header__logo{
+        width: 100px;
+        height: 100px;
+        margin-left: 0;        
+    }
+    .nav__lista{
+        flex-wrap: wrap;
+        font-size: 20px;
+        gap: 0.5rem;
+    }
+    .titulobanner{
+        font-size: 20px;
+    }
+    .subtitulobanner{
+        font-size: 10px;
+        left: 37%;
+        top: 14%;
+    }
+    h4{
+        font-size: 18px;
+    }
+    .inicio__parrafo{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .nosotros__parrafo{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}

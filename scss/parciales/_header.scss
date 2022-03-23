@@ -1,0 +1,69 @@
+/* Estilos para el header */
+
+.header{
+    height: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    position: relative;
+    background-color: rgb(160, 159, 87);
+
+    &__contenedor{
+        margin:auto 0;
+        height: 150px;
+        display: flex ;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        width: 150px;
+        height: 150px;
+        margin-left: 2rem;
+    }
+    &__logo img{
+        height: 100%;   
+    }
+}
+
+ul{
+   padding-right: 2rem;
+   list-style: none;
+}
+
+
+.nav__lista{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);    
+}
+nav ul li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration:  none;
+    font-weight: 700;
+    position: relative;
+
+    &:hover{
+        color:$colorlogo;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top:100%;
+        left: 0%;
+        width: 100%;
+        height: 3px;
+        background-color: $colorlogo;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+    }
+}
+
+
+nav ul li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}

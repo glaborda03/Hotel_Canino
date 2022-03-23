@@ -1,0 +1,39 @@
+/* Estilos base */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(234, 222, 184);
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    font-size: 60px;
+    text-align: center;
+    color: $colorlogo;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 60px;
+}
+.h2titulos {
+    margin-top: 60px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+    color:rgb(160, 159, 87);
+    margin-bottom: 50px;
+}
+h4{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+h5{
+    font-size: 20px;
+    margin-bottom: 10px;
+}

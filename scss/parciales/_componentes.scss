@@ -1,0 +1,110 @@
+/* Estilos para el Cuerpo de la pagina inicio */
+
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+.carousel-item{
+    position:  relative;
+}
+
+.titulobanner{
+    font-size: 80px;
+    position: absolute;
+    font-family: 'Bevan', cursive;
+    left: 40%;
+    color: $colorlogo;
+}
+.subtitulobanner{
+    position: absolute;
+    color: $colorlogo;
+    font-family: 'Bevan', cursive;
+    left: 40%;
+    top: 13%;
+}
+.inicio__video{
+    width: 100%;
+    height: 100%;
+}
+.inicio__parrafo{
+    font-size: 18px;
+}
+.inicio__whatsapp{
+    font-size: 50px;
+    color:green;    
+}
+
+/* Estilos para el cuerpo de la pagina Servicios */
+
+.card{
+    margin: auto;
+    margin-top: 60px;
+    background-color: rgb(234, 222, 184);
+}
+.card-title{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.scale-up-hor-center {
+	-webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+/*Animation scale-up-hor-center*/
+
+ @-webkit-keyframes scale-up-hor-center {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+    }
+  }
+  @keyframes scale-up-hor-center {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+    }
+  }
+  
+/* Estilos para el cuerpo de la pagina Nostros */
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* Animation scale-up-center */
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+/* Estilos para el cuerpo de la pagina Contacto */
+
+.contacto__img{
+    width: 100%;
+    height: auto;
+}
