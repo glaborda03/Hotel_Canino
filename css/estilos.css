@@ -115,7 +115,7 @@ nav ul li a:hover::after {
 
 .inicio__video {
   width: 100%;
-  height: 100%; }
+  height: auto; }
 
 .inicio__parrafo {
   font-size: 18px; }

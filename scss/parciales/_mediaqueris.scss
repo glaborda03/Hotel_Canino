@@ -5,8 +5,7 @@
         height: auto;
     }
     .header__logo{
-        width: 120px;
-        height: 120px;        
+        @include sizes(120px, 120px);        
     }
     .header__contenedor{
         gap: 2rem;
@@ -60,8 +59,7 @@
         justify-content: center;
     }    
     .header__logo{
-        width: 100px;
-        height: 100px;
+        @include sizes(100px, 100px);
         margin-left: 0;        
     }
     .nav__lista{
