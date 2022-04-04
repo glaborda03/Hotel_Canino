@@ -99,6 +99,12 @@ nav ul li a:hover::after {
 .carousel-item {
   position: relative; }
 
+.row {
+  margin-right: 0; }
+
+.carrosuelimg {
+  padding-right: 0; }
+
 .titulobanner {
   font-size: 80px;
   position: absolute;
@@ -239,7 +245,7 @@ nav ul li a:hover::after {
     margin-left: 0; }
   .nav__lista {
     flex-wrap: wrap;
-    font-size: 20px;
+    font-size: 14px;
     gap: 0.5rem; }
   .titulobanner {
     font-size: 20px; }
