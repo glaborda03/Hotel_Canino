@@ -109,15 +109,8 @@ nav ul li a:hover::after {
   font-size: 80px;
   position: absolute;
   font-family: 'Bevan', cursive;
-  left: 40%;
+  left: 22%;
   color: #683d10; }
-
-.subtitulobanner {
-  position: absolute;
-  color: #683d10;
-  font-family: 'Bevan', cursive;
-  left: 40%;
-  top: 13%; }
 
 .inicio__video {
   width: 100%;
@@ -213,9 +206,8 @@ nav ul li a:hover::after {
   h4 {
     font-size: 22px; }
   .titulobanner {
-    font-size: 50px; }
-  .subtitulobanner {
-    font-size: 18px; }
+    font-size: 50px;
+    left: 20%; }
   .inicio__video {
     padding-right: 0; }
   .inicio__parrafo {
@@ -227,11 +219,8 @@ nav ul li a:hover::after {
 
 @media screen and (max-width: 768px) {
   .titulobanner {
-    font-size: 30px; }
-  .subtitulobanner {
-    font-size: 14px;
-    left: 38%;
-    top: 13%; } }
+    font-size: 30px;
+    left: 25%; } }
 
 /* Full Responsive para mobile */
 @media screen and (max-width: 600px) {
@@ -248,11 +237,8 @@ nav ul li a:hover::after {
     font-size: 14px;
     gap: 0.5rem; }
   .titulobanner {
-    font-size: 20px; }
-  .subtitulobanner {
-    font-size: 10px;
-    left: 37%;
-    top: 14%; }
+    font-size: 22px;
+    left: 30%; }
   h4 {
     font-size: 18px; }
   .inicio__parrafo {
@@ -262,3 +248,13 @@ nav ul li a:hover::after {
   .nosotros__parrafo {
     font-size: 16px;
     margin-bottom: 20px; } }
+
+@media screen and (max-width: 425px) {
+  .titulobanner {
+    font-size: 20px;
+    left: 20%; } }
+
+@media screen and (max-width: 320px) {
+  .titulobanner {
+    font-size: 18px;
+    left: 15%; } }

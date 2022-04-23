@@ -19,9 +19,7 @@
     }
     .titulobanner{
         font-size: 50px;
-    }
-    .subtitulobanner{
-        font-size: 18px;
+        left: 20%;
     }
     .inicio__video{
         padding-right: 0;
@@ -41,13 +39,8 @@
 
     .titulobanner{
         font-size: 30px;
+        left: 25%;
     }
-    .subtitulobanner{
-        font-size: 14px;
-        left: 38%;
-        top: 13%;
-    }
-
 }
 
 /* Full Responsive para mobile */
@@ -68,12 +61,8 @@
         gap: 0.5rem;
     }
     .titulobanner{
-        font-size: 20px;
-    }
-    .subtitulobanner{
-        font-size: 10px;
-        left: 37%;
-        top: 14%;
+        font-size: 22px;
+        left: 30%;
     }
     h4{
         font-size: 18px;
@@ -89,3 +78,15 @@
         margin-bottom: 20px;
     }
 }
+@media screen and (max-width: 425px) {
+    .titulobanner {
+      font-size: 20px;
+      left: 20%;
+     }
+  }
+  @media screen and (max-width: 320px) {
+    .titulobanner {
+      font-size: 18px;
+      left: 15%; 
+    }
+  }

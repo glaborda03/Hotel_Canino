@@ -17,15 +17,8 @@
     font-size: 80px;
     position: absolute;
     font-family: 'Bevan', cursive;
-    left: 40%;
+    left: 22%;
     color: $colorlogo;
-}
-.subtitulobanner{
-    position: absolute;
-    color: $colorlogo;
-    font-family: 'Bevan', cursive;
-    left: 40%;
-    top: 13%;
 }
 .inicio__video{
   @include sizes(100%, auto);
